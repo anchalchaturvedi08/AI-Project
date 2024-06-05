@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: url('https://marketplace.canva.com/EAE6ct-7FQY/1/0/1600w/canva-blue-minimalist-desktop-wallpaper-7vuV8a097eU.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#about {
+    background-color: #e6f7ff; /* Light Blue */
+}
+
+#skills {
+    background-color: #ffebcc; /* Light Orange */
+}
+
+#projects {
+    position: relative; /* Ensuring the section acts as a container for the fixed GIF */
+    background-color: #e6ffe6; /* Light Green */
+    padding-bottom: 200px; /* Extra padding to accommodate the fixed GIF */
+}
+
+#blog {
+    background-color: #fff0f0; /* Light Pink */
+}
+
+#contact {
+    background-color: #f9f9f9; /* Very Light Gray */
+    padding: 2rem;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+    color: #333; /* Dark Gray */
+}
+
+.contact-item {
+    margin-bottom: 1rem;
+}
+
+.contact-item p {
+    margin: 0.5rem 0;
+}
+
+.contact-item a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #0056b3;
+}
+
+.contact-item i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #007BFF;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+i {
+    margin-right: 10px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #24292e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #444d56;
+}
+
+.github-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.gif-container {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.gif {
+    max-width: 200px;
+}
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 1rem;
+    }
+
+    .github-button {
+        flex-direction: column;
+        text-align: center;
+    }
+}
